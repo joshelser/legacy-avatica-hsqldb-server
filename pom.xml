@@ -4,6 +4,8 @@
   <artifactId>legacy-avatica-1.7.0-hsqldb-server</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <url>https://github.com/joshelser/legacy-avatica-hsqldb-server</url>
+  <name>Standalone HSQLDB-backed Avatica server for old Avatica installs</name>
+  <description>An artifact for older Avatica versions where this is not already in Avatica</description>
   <licenses>
     <license>
         <name>Apache License, Version 2.0</name>
@@ -114,6 +116,28 @@
                 </transformer>
               </transformers>
             </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
           </execution>
         </executions>
       </plugin>
