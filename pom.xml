@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.joshelser</groupId>
   <artifactId>legacy-avatica-1.7.0-hsqldb-server</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <url>https://github.com/joshelser/legacy-avatica-hsqldb-server</url>
   <name>Standalone HSQLDB-backed Avatica server for old Avatica installs</name>
   <description>An artifact for older Avatica versions where this is not already in Avatica</description>
@@ -31,6 +31,7 @@
     <connection>scm:git:https://github.com/joshelser/legacy-avatica-hsqldb-server.git</connection>
     <developerConnection>scm:git:git@github.com:joshelser/legacy-avatica-hsqldb-server.git</developerConnection>
     <url>https://github.com/joshelser/legacy-avatica-hsqldb-server</url>
+    <tag>legacy-avatica-1.7.0-hsqldb-server-0.0.1</tag>
   </scm>
   <developers>
     <developer>
